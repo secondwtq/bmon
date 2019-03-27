@@ -1,0 +1,4 @@
+(executable
+ (name bmon)
+ (libraries containers lwt.unix cmdliner cohttp-lwt-unix yojson)
+ (preprocess (pps lwt_ppx ppx_deriving_yojson)))
